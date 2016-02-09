@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  database: database-starter
+  host: localhost
+test:
+  adapter: postgresql
+  database: database-starter-test
+  host: localhost
