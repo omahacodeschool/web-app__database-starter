@@ -1,0 +1,13 @@
+<% @movies.each do |movie| %>
+  <p>
+    <a href="/view_movie/<%= movie.id %>">
+      <%= movie.title %>
+    </a>
+
+    -
+
+    <a href="/delete_movie/<%= movie.id %>">
+      Delete
+    </a>
+  </p>
+<% end %>
