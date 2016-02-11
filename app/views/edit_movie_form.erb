@@ -1,0 +1,15 @@
+<a href="/view_movie/<%= @movie.id %>"></a>
+
+<form action="/process_edit_movie_form/<%= @movie.id %>">
+  <p>
+    Title:
+    <input type="text" name="banana_title" value="<%= @movie.title %>">
+  </p>
+
+  <p>
+    Director's ID:
+    <input type="number" name="potato_number" value="<%= @movie.director_id %>">
+  </p>
+
+  <input type="submit">
+</form>
