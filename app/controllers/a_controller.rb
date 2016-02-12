@@ -1,5 +1,5 @@
 # Processes the movie form.
-MyApp.get "/add_movie" do
+MyApp.post "/add_movie" do
   x = Movie.new
   x.title = params[:movie_title]
   x.director_id = params[:director]

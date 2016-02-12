@@ -6,8 +6,8 @@
 
     -
 
-    <a href="/delete_movie/<%= movie.id %>">
-      Delete
-    </a>
+    <form action="/delete_movie/<%= movie.id %>" method="post">
+      <input type="submit" value="Delete">
+    </form>
   </p>
 <% end %>

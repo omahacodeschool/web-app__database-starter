@@ -25,8 +25,25 @@ MyApp.get "/view_movie/:banana" do
   erb :"single_movie"
 end
 
-MyApp.get "/delete_movie/:potato" do
+MyApp.post "/delete_movie/:potato" do
   @movie = Movie.find_by_id(params[:potato])
   @movie.delete
   erb :"deleted"
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
